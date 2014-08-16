@@ -342,11 +342,11 @@ long dt;
 void setup()
 {
     gb.begin();
+    gb.display.setFont(font5x7);
     gb.titleScreen(F(""), logo);
     gb.battery.show = false;
     gb.pickRandomSeed();
 	gb.setFrameRate(10);
-    gb.display.setFont(font5x7);
     score = 0;
     sprite_count = 1;
     reset_catcher();
